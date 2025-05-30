@@ -1,0 +1,85 @@
+Task 4
+Setup and Use a Firewall on Windows/Linux
+
+**Student Name:** NETHRANAND MALIGE  
+**Course:** CYBER SECURITY INTERNSHIP
+**Assignment:** Task 4 - Setup and Use a Firewall on Windows/Linux  
+**Date:** May 30, 2025
+
+## What I Learned
+
+Through this assignment, I gained comprehensive knowledge about firewall configuration and management across different operating systems:
+
+**Windows Firewall Management:**
+- Understanding Windows Defender Firewall with Advanced Security interface
+- Creating inbound and outbound rules for specific applications and ports
+- Configuring rules based on protocols (TCP/UDP), port ranges, and IP addresses
+- Managing firewall profiles (Domain, Private, Public) and their different security levels
+- Using both GUI interface and PowerShell commands for firewall management
+
+**Network Security Fundamentals:**
+- How firewalls act as the first line of defense in network security
+- The difference between stateful and stateless firewalls
+- Understanding network traffic flow and packet filtering mechanisms
+- Importance of the principle of least privilege in firewall rule creation
+- How to balance security requirements with functionality needs
+
+## Security Observations
+
+### Potential Risks Found
+
+**Windows Environment:**
+- Default Windows Firewall settings may allow too many applications through automatically
+- Many users disable Windows Firewall completely, leaving systems vulnerable
+- Inadequate logging configurations make it difficult to track security events
+- Some malware can modify firewall rules or disable the firewall entirely
+- Users often create overly permissive rules (allowing all traffic) instead of specific rules
+
+**General Network Risks:**
+- Poorly configured firewalls can create false sense of security
+- Internal network traffic often bypasses firewall rules
+- Application-layer attacks may pass through properly configured firewalls
+- Regular rule auditing is often neglected, leading to outdated configurations
+
+### Recommendations
+
+**Best Practices for Windows:**
+1. Keep Windows Firewall enabled across all network profiles
+2. Regularly audit and remove unnecessary firewall rules
+3. Enable logging for both allowed and blocked connections
+4. Use Group Policy for enterprise firewall management
+5. Configure specific port ranges instead of allowing entire applications
+6. Implement network segmentation using Windows Firewall with Advanced Security
+7. Regularly update firewall rules based on changing application requirements
+
+**General Security Recommendations:**
+1. Implement defense-in-depth strategy with multiple security layers
+2. Monitor firewall logs regularly for suspicious activities
+3. Conduct periodic security assessments of firewall configurations
+4. Train users on the importance of firewall security
+5. Maintain backup configurations for quick recovery
+6. Use network monitoring tools to validate firewall effectiveness
+
+## Problems I Faced
+
+**Technical Challenges:**
+1. **Rule Priority Conflicts:** Initially struggled with understanding how rule order affects traffic filtering
+2. **Application Detection:** Windows Firewall sometimes failed to properly identify applications, requiring manual path specification
+3. **Port Range Configuration:** Confusion between different syntax formats for specifying port ranges in Windows
+4. **Network Profile Management:** Understanding when Windows switches between Domain, Private, and Public profiles and how this affects rule application
+
+## Conclusion
+
+This assignment provided invaluable hands-on experience with enterprise-level network security tools. Configuring firewalls on both Windows and Linux platforms highlighted the importance of systematic security planning and the critical role firewalls play in protecting networked systems.
+
+The practical experience gained through creating, testing, and troubleshooting firewall rules demonstrated that effective network security requires both technical knowledge and careful planning. Understanding the nuances between different firewall implementations helps in making informed decisions about network architecture and security policies.
+
+Key takeaways include the importance of following the principle of least privilege, maintaining comprehensive documentation, and regularly auditing firewall configurations. The assignment also emphasized that firewalls are just one component of a comprehensive security strategy and must be properly integrated with other security measures.
+
+Moving forward, I plan to continue exploring advanced firewall features such as intrusion detection integration, automated rule management, and enterprise-scale deployment strategies. This foundation in basic firewall management will serve as a stepping stone to more advanced network security topics.
+
+**Configuration Files and Screenshots:**
+- Windows Firewall rules export: `netsh advfirewall export "firewall_backup.wfw"`
+- Screenshots of active rules, testing procedures, and log analysis included in appendix
+
+This assignment successfully demonstrated basic firewall management skills and provided a solid understanding of network traffic filtering principles that will be essential for future cybersecurity work.
